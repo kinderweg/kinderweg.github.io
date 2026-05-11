@@ -8,11 +8,11 @@ function Header() {
   return (
     <>
       <div
-        style={{ backgroundColor: "#5498c0" }}
-        className="flex justify-between items-center w-full text-white relative"
+        style={{ backgroundColor: "#c45d26" }}
+        className="flex  justify-between items-center w-full  text-white fixed"
       >
         {/* Logo Section */}
-        <div className="flex">
+        <div className="flex ">
           <img
             width="80px"
             height="70px"
@@ -50,16 +50,32 @@ function Header() {
         </div>
 
         {/* Mobile Dropdown Menu */}
-        {clicked && (
-          <div className="absolute top-full left-0 w-full bg-[#5498c0] md:hidden z-50">
-            <ul className="flex flex-col items-center text-white py-4">
-              <a href='#home' className="p-3 text-xl cursor-pointer  hover:text-gray-300 border-b border-white/40 ">Home</a>
-              <a href='#programs' className="p-3 text-xl cursor-pointer  hover:text-gray-300 border-b border-white/40 ">Programs</a>
-              <a href='#gallery' className="p-3 text-xl cursor-pointer  hover:text-gray-300 border-b border-white/40">Gallery</a>
-              <a href='#contact' className="p-3 text-xl cursor-pointer  hover:text-gray-300 border-b border-white/40">Connect Us</a>
-            </ul>
-          </div>
-        )}
+        <div
+          className={`absolute top-full left-0 w-full bg-[#c45d26] md:hidden z-50
+  transition-all duration-700 ease-in-out
+  ${clicked ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
+        >
+          <ul className="flex flex-col items-center text-white py-4">
+            <a href='#home' className="p-3 text-xl cursor-pointer hover:text-gray-300 border-b border-white/40">
+              Home
+            </a>
+
+            <a href='#programs' className="p-3 text-xl cursor-pointer hover:text-gray-300 border-b border-white/40">
+              Programs
+            </a>
+            <a href='#facility' className="p-3 text-xl cursor-pointer hover:text-gray-300 border-b border-white/40">
+             Facilities
+            </a>
+
+            <a href='#gallery' className="p-3 text-xl cursor-pointer hover:text-gray-300 border-b border-white/40">
+              Gallery
+            </a>
+
+            <a href='#contact' className="p-3 text-xl cursor-pointer hover:text-gray-300 border-b border-white/40">
+              Connect Us
+            </a>
+          </ul>
+        </div>
       </div>
     </>
   )
