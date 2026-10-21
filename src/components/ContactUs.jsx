@@ -2,7 +2,7 @@ import React from 'react'
 import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa'
 function ContactUs() {
   return (
-    <div className='contact'>
+    <div id='contact'>
       <div className='bg-yellow-50 p-5 '>
         <h1 className='text-3xl md:text-4xl font-black text-blue-950 text-center'>Connect with Us</h1>
         <p className='text-sm md:text-lg text-center'>Get in Touch</p>
@@ -31,7 +31,7 @@ function ContactUs() {
         { icon: <FaFacebook size={22} />, label: 'Facebook', href: '#' },
       ].map(({ icon, label, href }) => (
         <a key={label} href={href}
-          className='flex flex-col items-center justify-center gap-1 w-16 h-16 rounded-full bg-orange-200 border border-orange-400 text-orange-900 text-[10px] font-bold hover:bg-orange-400 hover:scale-110 transition-all duration-200'>
+          className='flex flex-col items-center justify-center gap-1 w-16 h-16 rounded-full bg-orange-200 border border-orange-400 text-orange-900 text-[10px] font-bold hover:bg-orange-300  transition-all duration-200'>
           {icon}
           {label}
         </a>

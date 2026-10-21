@@ -9,7 +9,7 @@ function Header() {
     <>
       <div
         style={{ backgroundColor: "#c45d26" }}
-        className="flex  justify-between items-center w-full  text-white fixed"
+        className="fixed top-0 left-0 z-50 flex w-full items-center justify-between text-white"
       >
         {/* Logo Section */}
         <div className="flex ">

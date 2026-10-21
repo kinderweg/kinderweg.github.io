@@ -5,7 +5,7 @@ import {  FaFacebook, FaInstagram, FaWhatsapp} from 'react-icons/fa'
 function Footer() {
   return (
     <>
-     <div className="left-0 w-full mb-0 overflow-hidden leading-none">
+     <div className="left-0 w-full mb-0 mt-0 overflow-hidden leading-none">
     <svg
       viewBox="0 0 500 80"
       preserveAspectRatio="none"
@@ -32,7 +32,7 @@ function Footer() {
 
   {/* Quick Links */}
   <div>
-    <h4 className='font-bold mb-3'>QUICK LINKS</h4>
+    <h4 className='font-bold mb-2 mt-3 '>QUICK LINKS</h4>
     <ul className='flex flex-col gap-2'>
       <li><a href='#home' className='text-sm hover:underline opacity-90 hover:opacity-100'>Home</a></li>
       <li><a href='#programs' className='text-sm hover:underline opacity-90 hover:opacity-100'>Programs</a></li>
@@ -44,7 +44,7 @@ function Footer() {
 
   {/* Follow Us */}
   <div>
-    <h4 className='font-bold mb-2'>FOLLOW US</h4>
+    <h4 className='font-bold mb-2 mt-3'>FOLLOW US</h4>
     <p className='text-sm mb-4 opacity-85'>Let us be social</p>
     <div className='flex flex-col gap-3'>
       <a href='#' className='flex items-center gap-2 text-sm hover:underline opacity-90 hover:opacity-100'>

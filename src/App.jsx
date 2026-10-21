@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Header from './components/Header'
 import HomeSection from './components/HomeSection'
 
@@ -11,16 +11,16 @@ import Servies from './components/Servies'
 function App() {
  
   return (
-    <div>
-     <Header  />
-        <HomeSection/>
-        <Programs/>
-        <Servies/>
-        <GallerySection/>
-        <ContactUs/>
-
-        <Footer/>
-      
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main className="pt-20 md:pt-24">
+        <HomeSection />
+        <Programs />
+        <Servies />
+        <GallerySection />
+        <ContactUs />
+      </main>
+      <Footer />
     </div>
   )
 }
